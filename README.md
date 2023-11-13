@@ -1,2 +1,3 @@
-# SFML-Platformer
-Simple game created using only SFML and some free assests.
+# Platformer
+
+Platform game that runs on x86 only
