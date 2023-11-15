@@ -10,7 +10,7 @@ class Game
 
 private:
 	int time_;
-	int score_time_ = 200000;
+	int score_time_ = 1000000;
 
 	enum GameState { kMenu, kPlayGame, kFinished };	//an enumeration type that determines the current state of the application
 
