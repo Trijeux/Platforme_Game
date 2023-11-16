@@ -6,7 +6,8 @@ class Portal :
 {
 private:
 	bool open_;						//a variable that stores the flag whether the portal is open_ or not
-	AnimationHolder* animations_[2]; //a variable that stores all portal animations_
+	//AnimationHolder* animations_[2]; //a variable that stores all portal animations_
+	std::vector<AnimationHolder> animations_;
 	animation::Type current_animation_;	//a variable that stores the animation_ update type
 	void draw(sf::RenderTarget& target, sf::RenderStates state) const override;//a function that overwrites the library draw function
 public:
