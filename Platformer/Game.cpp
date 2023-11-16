@@ -12,6 +12,7 @@ Game::Game(sf::VideoMode resolution, std::string title): resized_(true), current
 	{
 		game_text_[0].setFont(font_normal_);
 		game_text_[1].setFont(font_normal_);
+		game_text_[2].setFont(font_normal_);
 		menu_text_[0].setFont(font_normal_);
 		menu_text_[1].setFont(font_normal_);
 		result_text_[1].setFont(font_normal_);
@@ -24,6 +25,7 @@ Game::Game(sf::VideoMode resolution, std::string title): resized_(true), current
 	}
 	game_text_[0].setFillColor(sf::Color::White);
 	game_text_[1].setFillColor(sf::Color::White);
+	game_text_[2].setFillColor(sf::Color::White);
 	menu_text_[0].setFillColor(sf::Color::Yellow);
 	menu_text_[1].setFillColor(sf::Color::White);
 	game_title_.setFillColor(sf::Color::Green);
@@ -295,7 +297,7 @@ void Game::UpdateGameText(int time)
 	game_text_[2].setString("Time: " + std::to_string(time));
 	game_text_[0].setPosition(m_window_.getView().getCenter() - static_cast<sf::Vector2f>(m_window_.getSize()) / 2.f + sf::Vector2f{ 25.f,0.f });
 	game_text_[1].setPosition(m_window_.getView().getCenter() - static_cast<sf::Vector2f>(m_window_.getSize()) / 2.f + sf::Vector2f{ 25.f,25.f });
-	game_text_[2].setPosition(m_window_.getView().getCenter() - static_cast<sf::Vector2f>(m_window_.getSize()) / 2.f + sf::Vector2f{ 88.f,72.f });
+	game_text_[2].setPosition(m_window_.getView().getCenter() - static_cast<sf::Vector2f>(m_window_.getSize()) / 2.f + sf::Vector2f{ 25.f,50.f });
 	
 }
 

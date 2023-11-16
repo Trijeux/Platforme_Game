@@ -18,7 +18,7 @@ private:
 
 	bool resized_;									//a variable that stores the value_ of whether the window's value_ has changed since the last update
 	sf::Font font_normal_, font_title_;					//variables storing fonts used in the game				
-	sf::Text game_text_[2], menu_text_[2], game_title_, result_text_[3];	//variables storing text used in the game
+	sf::Text game_text_[3], menu_text_[2], game_title_, result_text_[3];	//variables storing text used in the game
 
 	World mworld;								//a variable that stores the current level in the game and all the objects contained in it
 	sf::RenderWindow m_window_;					//a variable that holds the application window

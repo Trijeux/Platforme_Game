@@ -2,7 +2,7 @@
 
 
 
-void Portal::draw(sf::RenderTarget & target, sf::RenderStates state) const
+void Portal::draw(sf::RenderTarget& target, sf::RenderStates state) const
 {
 	if (animations_[current_animation_] != nullptr)
 	{
@@ -13,7 +13,7 @@ void Portal::draw(sf::RenderTarget & target, sf::RenderStates state) const
 		target.draw(obj_, state);
 }
 
-void Portal::AddAnimation(animation::Type anim_type, sf::Texture & texture, sf::Time duration, unsigned int frame_number,  bool repeat)
+void Portal::AddAnimation(animation::Type anim_type, sf::Texture& texture, sf::Time duration, unsigned int frame_number, bool repeat)
 {
 	if (anim_type <= animation::Type::kMove)
 	{
@@ -43,7 +43,7 @@ void Portal::OpenPortal()
 	this->open_ = true;
 }
 
-Portal::Portal(sf::Vector2f position, sf::Vector2f size): Entity(position,size,object::Type::kPortal), open_(false), current_animation_(animation::Type::kMove)
+Portal::Portal(sf::Vector2f position, sf::Vector2f size) : Entity(position, size, object::Type::kPortal), open_(false), current_animation_(animation::Type::kMove)
 {
 
 }
